@@ -22,12 +22,17 @@ body {
 
 .div-2 {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
+  right: 35px;
 }
+
+
 /*services*/
 ul {
   list-style-type: none;
+  margin: 10px 0;
 }
 /*return button*/
 .return {
