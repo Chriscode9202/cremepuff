@@ -21,8 +21,9 @@ body {
 }
 
 .div-2 {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*services*/
 ul {
@@ -167,7 +168,7 @@ textarea {
 }
 
 textarea:focus,
-input: focus {
+input:focus {
   outline: none;
   border-color: blue;
 }
