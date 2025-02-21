@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CremePuff Tech</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="bio.html" class="nav-branding" data-aos="zoom-in-right" data-aos-duration="3000"> print("sweetness in every byte")</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bio.html" class="nav-link">bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </nav> 
+        </header>
+
+        <!--Hamburger icon-->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!--Dropdown menu-->
+        <nav id="nav" class="dropdown-menu">
+            <ul>
+                <li><a href="#">Servies</a></li>
+                <li><a href="#">Bio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="home">
+            <div class="home-img">
+                <img src="cremepuffff.jpeg" alt="">
+            </div>
+            <div class="home-content">
+                <h1 Hey I'm <span>Chris</span></h1>
+                <h2 class="typing-text">I'm a <span> </span></h2>
+                
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i>
+                <a href="#"><i class="fa-brands fa-github"></i>
+                <a href="#"><i class="fa-brands fa-facebook"></i>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+            </div>
+        </section>
+        <div class="footer">
+            <footer>
+                <div>
+                  <p>&copy; 2024 CremePuff Tech. All rights reserved.</p>
+                  <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-of-service">Terms of Service</a></li>
+                    <li>Contact us: <a href="mailto:info@yourcompany.com">CremepuffTech@gmail.com</a></li>
+                    <li><a href="https://facebook.com/cremepufftech" target="_blank">Facebook</a></li>
+                    <li><a href="https://linkedin.com/cremepufftech"target="_blank">LinkedIn</a></li>
+                    <li>Address: Undisclosed but somewhere in New York City</li>
+                  </ul>
+                </div>
+        
+              </footer>
+        </div>
+        
+        <script src="script.js"></script>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            AOS.init(offset, 0);
+        </script>
+    </body>
+</html>
+
