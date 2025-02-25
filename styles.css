@@ -134,7 +134,6 @@ a {
         
    }
     .nav-bar{
-        
         position: fixed;
         align-items: center;
         gap: 60px;
@@ -168,12 +167,31 @@ a {
         font-size: 5rem;
     }
     
-    .social-icons{
+    .home .social-icons {
         display: flex;
         flex-direction: nowrap;
         justify-content: center;
         align-items: center;
+        white-space: nowrap;
 
+    }
+    .home .btn {
+        display: flex;
+        flex-direction: nowrap;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .home {
+        margin-top: 0;
+    }
+    .home-img{
+        display: flex;
+        flex-direction: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
     }
     
 
