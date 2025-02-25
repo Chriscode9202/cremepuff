@@ -2,16 +2,19 @@
     font-family: 'Courier New', monospace;
     padding: 0;
     margin: 0;
+    
 }
 body {
     background-color: rgb(247, 235, 213);
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    overflow-x: clip !important;
     color: rgba(10, 14, 10, 0.505);
 }
 header {
-    background-color: #262626; 
+    background-color: #262626;
+    
 }
 li {
     list-style: none;
@@ -37,14 +40,14 @@ a {
     padding: 0 24px;
     font-weight: 400;
     font-size: 20px;
+    
 }
 .nav-menu{
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    color: #414242;
+    gap: 60px;    
 }
 .nav-link:hover{
     color: #0AFAF2;
@@ -56,10 +59,10 @@ a {
 
 @media(max-width:1000px) {
     .hamburger-menu {
-        position: fixed;
+        position: absolute;
+        display: flex;
         top: 20px;
         right: 20px;
-        display: flex;
         flex-direction: column;
         cursor: pointer;
         z-index: 100;
@@ -70,6 +73,7 @@ a {
         margin: 4px 0;
         background-color: white;
         transition: 0.3s;
+        
     }
     .hamburger-menu:hover {
         background-color: #0AFAF2;
@@ -77,37 +81,38 @@ a {
         border-radius: 15%;
     }
     
+    
     /*drop down menu*/
     .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        left: 0;
+        display: flex;
+        flex-direction: coloumn;
+        width: 100%;
         background-color: #414242;
-        padding: 15px;
+        padding-top: 1px;
+        padding-bottom: 5px;;
         text-align: center;
         font-size: 30px;
         z-index: 9999;
+ 
     }
     
     .dropdown-menu ul{
         list-style: none;
         padding: 0;
+        
     }
     .dropdown-menu li{
         margin: 10px 0;
     }
     .dropdown-menu a{
-        color: rgb(247, 59, 166);
+        color: #0AFAF2;
         text-decoration: none;
         font-size: 18px;
         transition: 0.3s;
-        
-        
     }
     .dropdown-menu a:hover{
         color: #0AFAF2;
+        transition: 0.3s;
     }
     
     /*toggle animation for menu*/
@@ -123,21 +128,24 @@ a {
         
     }
 
+    
     .nav-menu{
-        position: absolute;
-        display: inline-block;
-        right: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #414242;
-        width: 100%;
-        text-align: center;
-        transition: .5s;
-        opacity: .8;
+        display: none;
         
-
+   }
+    .nav-bar{
+        
+        position: fixed;
+        align-items: center;
+        gap: 60px;
+        color: #414242;
+        left: 0;
+        right: 0;
     }
+    .nav-branding{
+        font-size: 15px;
+    }
+    
     .nav-item{
         margin: 16px 0;
     }
@@ -145,8 +153,7 @@ a {
     .nav-menu.active{
         left: 0;
     }
-}
-@media (max-width: 995px){
+
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
@@ -160,15 +167,7 @@ a {
     .home-content h1{
         font-size: 5rem;
     }
-    .home-img img{
-        width: 70vh;
-        margin-top: 0rem;
-        padding-top: 0px;
-    }   
     
-}
-
-@media (max-width: 600px){
     .social-icons{
         display: flex;
         flex-direction: nowrap;
@@ -176,23 +175,13 @@ a {
         align-items: center;
 
     }
-    .home-img{
-        border-radius: 50%;
-        
-    }
-    .home-img img {
-        position: relative;
-        width: 32vw;
-        border-radius: 10%;
-        box-shadow: 0 0 25px solid #414242;
-        cursor: pointer;
-        transition: 0.2s linear;
-        margin: 0 10px;
-    }  
+    
+
+    
 }
 
 
-
+ 
 
 section {
     min-height: 100vh;
@@ -259,6 +248,7 @@ span{
     content: "";
     color: red;
     animation: words 10s infinite;
+    
 }
 
 .typing-text span::after{
@@ -268,7 +258,6 @@ span{
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid black;
-    
     animation: cursor 0.5s infinite;
 
 }
@@ -276,6 +265,8 @@ span{
 @keyframes cursor{
     to{
         border-left: 3px solid blue;
+        
+        
     }
 }
 @keyframes words {
