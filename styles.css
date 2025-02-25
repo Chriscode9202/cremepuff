@@ -84,7 +84,7 @@ a {
     
     /*drop down menu*/
     .dropdown-menu {
-        display: flex;
+        display: none;
         flex-direction: coloumn;
         width: 100%;
         background-color: #414242;
